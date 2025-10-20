@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-consultation
+  namespace: esante-cmr
+  labels:
+    app: service-consultation
+spec:
+  selector:
+    app: service-consultation
+  ports:
+  - port: 8082
+    targetPort: 8082
+    protocol: TCP
+  type: ClusterIP

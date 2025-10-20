@@ -1,0 +1,6 @@
+/home/michel/Documents/esante-cmr/service-facturation/src/main/java/com/esante/facturation/ServiceFacturationApplication.java
+/home/michel/Documents/esante-cmr/service-facturation/src/main/java/com/esante/facturation/service/FactureService.java
+/home/michel/Documents/esante-cmr/service-facturation/src/main/java/com/esante/facturation/model/Facture.java
+/home/michel/Documents/esante-cmr/service-facturation/src/main/java/com/esante/facturation/repository/FactureRepository.java
+/home/michel/Documents/esante-cmr/service-facturation/src/main/java/com/esante/facturation/controller/FactureController.java
+/home/michel/Documents/esante-cmr/service-facturation/src/main/java/com/esante/facturation/model/StatutFacture.java

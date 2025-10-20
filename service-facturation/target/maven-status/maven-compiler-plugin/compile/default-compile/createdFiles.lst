@@ -1,0 +1,6 @@
+com/esante/facturation/service/FactureService.class
+com/esante/facturation/repository/FactureRepository.class
+com/esante/facturation/controller/FactureController.class
+com/esante/facturation/ServiceFacturationApplication.class
+com/esante/facturation/model/Facture.class
+com/esante/facturation/model/StatutFacture.class

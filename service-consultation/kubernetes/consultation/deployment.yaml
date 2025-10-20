@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service-consultation
+  namespace: esante-cmr
+  labels:
+    app: service-consultation
+    version: v1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: service-consultation
+  template:
+    metadata:
+      labels:
+        app: service-consultation
+        version: v1
+    spec:
+      containers:
+      - name: service-consultation
+        image: esante-cmr/service-consultation:1.0.0
+        ports:
+        - containerPort: 8082
+        env:
+        - name: SPRING_PROFILES_ACTIVE
+          value: "kubernetes"
+        - name: SPRING_DATASOURCE_URL
+          value: "jdbc:postgresql://postgresql.esante-cmr.svc.cluster.local:5432/consultation_db"
+        - name: SPRING_DATASOURCE_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: consultation-secret
+              key: username
+        - name: SPRING_DATASOURCE_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: consultation-secret
+              key: password
+        - name: SPRING_RABBITMQ_HOST
+          value: "rabbitmq.esante-cmr.svc.cluster.local"
+        - name: EUREKA_CLIENT_SERVICEURL_DEFAULTZONE
+          value: "http://service-discovery:8761/eureka"
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "1Gi"
+            cpu: "500m"
+        livenessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8082
+          initialDelaySeconds: 60
+          periodSeconds: 30
+        readinessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8082
+          initialDelaySeconds: 30
+          periodSeconds: 20

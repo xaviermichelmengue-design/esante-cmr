@@ -1,0 +1,10 @@
+.git
+.gitignore
+README.md
+target/
+.idea/
+*.iml
+.vscode/
+kubernetes/
+scripts/
+docs/

@@ -1,0 +1,8 @@
+com/esante/consultation/model/Appointment.class
+com/esante/consultation/repository/AppointmentRepository.class
+com/esante/consultation/controller/AppointmentController.class
+com/esante/consultation/service/AppointmentService.class
+com/esante/consultation/ConsultationServiceApplication.class
+com/esante/consultation/dto/AppointmentRequest.class
+com/esante/consultation/model/Appointment$AppointmentStatus.class
+com/esante/consultation/model/Consultation.class

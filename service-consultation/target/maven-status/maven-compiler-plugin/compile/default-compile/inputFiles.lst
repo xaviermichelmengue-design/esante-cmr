@@ -1,0 +1,7 @@
+/home/michel/Documents/esante-cmr/service-consultation/src/main/java/com/esante/consultation/model/Appointment.java
+/home/michel/Documents/esante-cmr/service-consultation/src/main/java/com/esante/consultation/controller/AppointmentController.java
+/home/michel/Documents/esante-cmr/service-consultation/src/main/java/com/esante/consultation/ConsultationServiceApplication.java
+/home/michel/Documents/esante-cmr/service-consultation/src/main/java/com/esante/consultation/repository/AppointmentRepository.java
+/home/michel/Documents/esante-cmr/service-consultation/src/main/java/com/esante/consultation/dto/AppointmentRequest.java
+/home/michel/Documents/esante-cmr/service-consultation/src/main/java/com/esante/consultation/model/Consultation.java
+/home/michel/Documents/esante-cmr/service-consultation/src/main/java/com/esante/consultation/service/AppointmentService.java

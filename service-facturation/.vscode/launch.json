@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceFacturationApplication<service-facturation>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.esante.facturation.ServiceFacturationApplication",
+            "projectName": "service-facturation",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
