@@ -18,19 +18,13 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
   rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
+    enabled: false
 
 eureka:
   client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-    fetch-registry: true
-    register-with-eureka: true
+    enabled: false
 
 logging:
   level:
-    com.esante.consultation: DEBUG
+    com.esante.consultation: INFO
     org.hibernate.SQL: DEBUG

@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ConsultationServiceApplication<service-consultation>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.esante.consultation.ConsultationServiceApplication",
+            "projectName": "service-consultation",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
