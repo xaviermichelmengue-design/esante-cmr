@@ -22,6 +22,12 @@
 - **Services assignés:** Service Facturation, Interface d'administration
 - **Compétences:** Spring Boot, React, Base de données
 
+#### Samory Toure
+- **GitHub:** [samorytoureydjibril](https://github.com/samorytoureydjibril)
+- **Rôle:** Développeur Backend
+- **Services assignés:** Service Laboratoire, Service Notification
+- **Compétences:** Spring Boot, APIs, Base de données
+
 ## 📞 Coordination du Projet
 
 ### Communication
@@ -55,5 +61,3 @@
 git clone https://github.com/xaviermichelmengue-design/esante-cmr.git
 cd esante-cmr
 # Suivre les instructions dans README.md
-
-
